@@ -7,16 +7,25 @@
 
 Power-packed wrapper over cropperjs@next.
 
+This package is just a module wrapper over [vue-modern-cropper](https://github.com/NamesMT/vue-modern-cropper), for more information check it's repo.
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
-## Features
+## Installation
 
-## Quick Setup
-
-Install the module to your Nuxt application with one command:
-
+Install the package
 ```bash
-npx nuxi module add nuxt-modern-cropper
+pnpm add -D nuxt-modern-cropper
+```
+
+Add `nuxt-modern-cropper` to your Nuxt config file:
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  modules: [
+    'nuxt-modern-cropper',
+  ],
+})
 ```
 
 That's it! You can now use `<ModernCropper />` in your Nuxt app ✨
