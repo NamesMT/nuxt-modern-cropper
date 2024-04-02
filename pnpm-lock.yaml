@@ -9,7 +9,7 @@ dependencies:
     specifier: ^3.11.1
     version: 3.11.1(rollup@3.29.4)
   vue-modern-cropper:
-    specifier: ^0.1.2
+    specifier: 0.x
     version: 0.1.2
 
 devDependencies:

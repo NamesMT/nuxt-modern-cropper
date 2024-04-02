@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.11.1",
-    "vue-modern-cropper": "^0.1.2"
+    "vue-modern-cropper": "0.x"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
