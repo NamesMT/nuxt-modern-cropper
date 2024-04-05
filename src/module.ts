@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addComponent } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
@@ -10,10 +10,11 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: {},
   setup (options, nuxt) {
-    const resolver = createResolver(import.meta.url)
-
-    addPlugin({
-      src: resolver.resolve('./runtime/plugin'),
+    addComponent({
+      name: 'ModernCropper',
+      export: 'ModernCropper',
+      filePath: 'vue-modern-cropper',
+      global: true,
       mode: 'client'
     })
   }
