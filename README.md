@@ -14,7 +14,7 @@ This package is just a module wrapper over [vue-modern-cropper](https://github.c
 
 Install the package
 ```bash
-pnpm add -D nuxt-modern-cropper
+pnpm add -D vue-modern-cropper nuxt-modern-cropper
 ```
 
 Add `nuxt-modern-cropper` to your Nuxt config file:
