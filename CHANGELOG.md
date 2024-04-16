@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.4
+
+[compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.3...v0.1.4)
+
+### 📖 Documentation
+
+- **README:** Also install vue-modern-cropper ([508a0e3](https://github.com/namesmt/nuxt-modern-cropper/commit/508a0e3))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.1.3
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.2...v0.1.3)
