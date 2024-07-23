@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.5...v0.1.6)
+
+### 🏡 Chore
+
+- Move `vue-modern-cropper` to `peerDependency` ([297e2cd](https://github.com/namesmt/nuxt-modern-cropper/commit/297e2cd))
+- Should not register as global component ([35ec477](https://github.com/namesmt/nuxt-modern-cropper/commit/35ec477))
+
+### 🤖 CI
+
+- Fix `test` job failing ([015c397](https://github.com/namesmt/nuxt-modern-cropper/commit/015c397))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.1.5
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.4...v0.1.5)
