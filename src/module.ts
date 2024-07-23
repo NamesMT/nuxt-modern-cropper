@@ -14,7 +14,6 @@ export default defineNuxtModule<ModuleOptions>({
       name: 'ModernCropper',
       export: 'ModernCropper',
       filePath: 'vue-modern-cropper',
-      global: true,
       mode: 'client',
     })
   },
