@@ -10,11 +10,24 @@ Power-packed wrapper over cropperjs@next.
 This package is just a module wrapper over [vue-modern-cropper](https://github.com/NamesMT/vue-modern-cropper), for more information check it's repo.
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
-## Installation
+## Table of Contents
+<details>
 
-Install the package
+<summary>TOC</summary>
+
+- [Nuxt Modern Cropper](#nuxt-modern-cropper)
+  - [Table of Contents](#table-of-contents)
+  - [Usage](#usage)
+    - [Install \& Setup](#install--setup)
+  - [Contribution](#contribution)
+
+</details>
+
+## Usage
+
+### Install & Setup
 ```bash
-pnpm add -D vue-modern-cropper nuxt-modern-cropper
+pnpm add -D nuxt-modern-cropper vue-modern-cropper
 ```
 
 Add `nuxt-modern-cropper` to your Nuxt config file:
