@@ -43,6 +43,12 @@ export default defineNuxtConfig({
 
 That's it! You can now use `<ModernCropper />` in your Nuxt app ✨
 
+To infer the type of the component for `ref` creation, make sure to use `import type` to avoid build error, because the module is client-only.
+```ts
+import type { ModernCropper } from '#components'
+
+const cropperRef = ref<InstanceType<typeof ModernCropper>>()
+```
 
 ## Contribution
 
