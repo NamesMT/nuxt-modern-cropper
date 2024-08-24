@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v0.1.8
+
+[compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.7...v0.1.8)
+
+### 📖 Documentation
+
+- **README:** Add TOC ([bd76b46](https://github.com/namesmt/nuxt-modern-cropper/commit/bd76b46))
+- **README:** Add note for ref creation type infer ([5a6d030](https://github.com/namesmt/nuxt-modern-cropper/commit/5a6d030))
+
+### 🏡 Chore
+
+- Update deps ([174181b](https://github.com/namesmt/nuxt-modern-cropper/commit/174181b))
+- Adjust playground sample ([312e122](https://github.com/namesmt/nuxt-modern-cropper/commit/312e122))
+- **release:** V0.1.7 ([ffd4702](https://github.com/namesmt/nuxt-modern-cropper/commit/ffd4702))
+- Housekeeping ([7161d56](https://github.com/namesmt/nuxt-modern-cropper/commit/7161d56))
+
+### 🎨 Styles
+
+- Apply lint fixes ([03fd968](https://github.com/namesmt/nuxt-modern-cropper/commit/03fd968))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+- Trung Dang ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.1.7
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.6...v0.1.7)
