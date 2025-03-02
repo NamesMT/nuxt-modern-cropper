@@ -5,10 +5,9 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Power-packed wrapper over cropperjs@next.
+Power-packed wrapper over `cropperjs` (v2).
 
-This package is just a module wrapper over [vue-modern-cropper](https://github.com/NamesMT/vue-modern-cropper), for more information check it's repo.
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+This package is a Nuxt module wrapper over [vue-modern-cropper](https://github.com/NamesMT/vue-modern-cropper), for more information and examples check it's repo.
 
 ## Table of Contents
 <details>
@@ -26,7 +25,7 @@ This package is just a module wrapper over [vue-modern-cropper](https://github.c
 ## Usage
 
 ### Install & Setup
-```bash
+```sh
 pnpm add -D nuxt-modern-cropper vue-modern-cropper
 ```
 
@@ -43,7 +42,7 @@ export default defineNuxtConfig({
 
 That's it! You can now use `<ModernCropper />` in your Nuxt app ✨
 
-To infer the type of the component for `ref` creation, make sure to use `import type` to avoid build error, because the module is client-only.
+>To infer the type of the component for `ref` creation, make sure to use `import type` to avoid build error, because the module is client-only.
 ```ts
 import type { ModernCropper } from '#components'
 

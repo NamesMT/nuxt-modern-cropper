@@ -1,6 +1,6 @@
 {
   "name": "nuxt-modern-cropper",
-  "version": "0.1.8",
+  "version": "1.6.8",
   "description": "Power-packed wrapper over cropperjs@next",
   "repository": "namesmt/nuxt-modern-cropper",
   "license": "MIT",
@@ -37,29 +37,35 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.13.0"
+    "@nuxt/kit": "^3.15.4"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.3.14",
-    "@nuxt/eslint-config": "^0.5.2",
-    "@nuxt/module-builder": "^0.8.3",
-    "@nuxt/schema": "^3.13.0",
-    "@nuxt/test-utils": "^3.14.1",
-    "@types/node": "^20.16.1",
-    "changelogen": "^0.5.5",
-    "eslint": "^9.9.1",
-    "nuxt": "^3.13.0",
-    "typescript": "latest",
-    "vitest": "^2.0.5",
-    "vue-tsc": "^2.0.29"
+    "@nuxt/devtools": "^2.1.1",
+    "@nuxt/eslint-config": "^1.1.0",
+    "@nuxt/module-builder": "^0.8.4",
+    "@nuxt/schema": "^3.15.4",
+    "@nuxt/test-utils": "^3.17.0",
+    "@types/node": "latest",
+    "changelogen": "^0.6.0",
+    "eslint": "^9.21.0",
+    "nuxt": "^3.15.4",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7",
+    "vue-tsc": "^2.2.8"
   },
   "peerDependencies": {
-    "@types/node": "^14.18.0 || >=16.10.0",
-    "vue-modern-cropper": "0.x"
+    "vue-modern-cropper": "^1"
   },
   "peerDependenciesMeta": {
     "vue-modern-cropper": {
       "optional": false
     }
+  },
+  "packageManager": "pnpm@10.5.2",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild"
+    ]
   }
 }
