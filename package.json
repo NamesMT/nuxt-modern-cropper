@@ -1,6 +1,6 @@
 {
   "name": "nuxt-modern-cropper",
-  "version": "1.6.8",
+  "version": "1.6.9",
   "description": "Power-packed wrapper over cropperjs@next",
   "repository": "namesmt/nuxt-modern-cropper",
   "license": "MIT",

@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.6.9
+
+[compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.8...v1.6.9)
+
+### 🏡 Chore
+
+- Housekeeping ([c5eb158](https://github.com/namesmt/nuxt-modern-cropper/commit/c5eb158))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.1.8
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.7...v0.1.8)
