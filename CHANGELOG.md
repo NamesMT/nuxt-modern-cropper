@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.6.10
+
+[compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v1.6.9...v1.6.10)
+
+### 🏡 Chore
+
+- Housekeeping ([c5eb158](https://github.com/namesmt/nuxt-modern-cropper/commit/c5eb158))
+- **release:** V1.6.9 ([83c06fb](https://github.com/namesmt/nuxt-modern-cropper/commit/83c06fb))
+- **ci:** Fix corepack ([38db34b](https://github.com/namesmt/nuxt-modern-cropper/commit/38db34b))
+- **ci:** Fix corepack ([0d2bec9](https://github.com/namesmt/nuxt-modern-cropper/commit/0d2bec9))
+- **ci:** Fix corepack ([4b8503b](https://github.com/namesmt/nuxt-modern-cropper/commit/4b8503b))
+- Deps, nolyfill, `useTemplateRef` ([b1183df](https://github.com/namesmt/nuxt-modern-cropper/commit/b1183df))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.6.9
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v0.1.8...v1.6.9)
