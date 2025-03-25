@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ModernCropper } from '#components'
 
-const cropper = ref<InstanceType<typeof ModernCropper>>()
+const cropper = useTemplateRef('cropper')
 
 onMounted(async () => {
   await nextTick()

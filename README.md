@@ -47,6 +47,9 @@ That's it! You can now use `<ModernCropper />` in your Nuxt app ✨
 import type { ModernCropper } from '#components'
 
 const cropperRef = ref<InstanceType<typeof ModernCropper>>()
+
+// Or better, use `useTemplateRef` to automatically infer the type (vue 3.5+)
+const cropperRef = useTemplateRef('cropperRef')
 ```
 
 ## Contribution
