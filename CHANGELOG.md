@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.6.11
+
+[compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v1.6.10...v1.6.11)
+
+### 🏡 Chore
+
+- Update deps ([fb714ac](https://github.com/namesmt/nuxt-modern-cropper/commit/fb714ac))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.6.10
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v1.6.9...v1.6.10)
