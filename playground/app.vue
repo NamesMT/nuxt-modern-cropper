@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ModernCropper } from '#components'
+import type { CropperSelection } from 'cropperjs'
 
 const cropper = useTemplateRef('cropper')
 
@@ -10,7 +11,7 @@ onMounted(async () => {
 
   console.log({ a: cropperRef, b: cropperRef.selection })
 
-  cropperRef.onCropperMounted(({ selection }) => {
+  cropperRef.onCropperMounted(({ selection }: { selection: CropperSelection }) => {
     console.log({ a: cropperRef, b: selection })
     console.log({ a: cropperRef, b: cropperRef.selection })
   })
