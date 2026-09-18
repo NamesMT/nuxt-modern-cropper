@@ -1,6 +1,38 @@
 # Changelog
 
 
+## v1.7.0
+
+[compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v1.6.11...v1.7.0)
+
+### 🩹 Fixes
+
+- Resolve pre-existing typecheck failures ([3fe1b97](https://github.com/namesmt/nuxt-modern-cropper/commit/3fe1b97))
+
+### 💅 Refactors
+
+- Remove empty runtime plugin ([0533a44](https://github.com/namesmt/nuxt-modern-cropper/commit/0533a44))
+
+### 📖 Documentation
+
+- Use pnpm in contribution instructions ([1ce38dd](https://github.com/namesmt/nuxt-modern-cropper/commit/1ce38dd))
+
+### 🏡 Chore
+
+- Update deps ([fb714ac](https://github.com/namesmt/nuxt-modern-cropper/commit/fb714ac))
+- **release:** V1.6.11 ([3ff2872](https://github.com/namesmt/nuxt-modern-cropper/commit/3ff2872))
+- Migrate to pnpm 12 and fix playground cropperjs types ([33f4246](https://github.com/namesmt/nuxt-modern-cropper/commit/33f4246))
+- Add LICENSE and update package description ([cacf577](https://github.com/namesmt/nuxt-modern-cropper/commit/cacf577))
+
+### 🤖 CI
+
+- Bump node to 22 (eslint-plugin-unicorn requires Set.prototype.union) ([9a9b8c1](https://github.com/namesmt/nuxt-modern-cropper/commit/9a9b8c1))
+- Use pnpm/action-setup for pnpm 12 ([1901638](https://github.com/namesmt/nuxt-modern-cropper/commit/1901638))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.6.11
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v1.6.10...v1.6.11)
