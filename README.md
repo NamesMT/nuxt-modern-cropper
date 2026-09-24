@@ -19,6 +19,7 @@ This package is a Nuxt module wrapper over [vue-modern-cropper](https://github.c
   - [Usage](#usage)
     - [Install \& Setup](#install--setup)
   - [Contribution](#contribution)
+  - [Releasing](#releasing)
 
 </details>
 
@@ -77,11 +78,31 @@ const cropperRef = useTemplateRef('cropperRef')
   pnpm run test
   pnpm run test:watch
   
-  # Release new version
-  pnpm run release
+  # Check a version before releasing (does not publish)
+  pnpm run release:check 1.8.0
   ```
 
 </details>
+
+## Releasing
+
+Releases are version-first and manual, and run from GitHub Actions — do not tag or publish locally.
+
+1. Open **Actions → Release → Run workflow** on `main`.
+2. Enter the `version` to ship, without a leading `v` (e.g. `1.8.0`).
+3. Optionally set `dry-run` to stop before anything is pushed or published.
+
+The workflow verifies the version against `package.json`, runs lint/types/tests, builds, lets
+[changelogen](https://github.com/unjs/changelogen) bump the version, write `CHANGELOG.md`, commit
+and tag `v<version>`, pushes it, creates the GitHub release, and publishes to npm with provenance
+over OIDC trusted publishing.
+
+One-time setup, before the first dispatch:
+
+- Publish the package by hand once — npm only lets you configure a trusted publisher for a package
+  that already exists.
+- On npmjs.com → the package → **Settings → Trusted Publisher**, add this repository with the
+  workflow filename `release.yml`.
 
 
 <!-- Badges -->
