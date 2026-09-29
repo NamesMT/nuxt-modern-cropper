@@ -48,3 +48,5 @@ Manual and version-first: dispatch **Actions → Release → Run workflow** with
 - `pnpm run test:types` and the e2e suite both fail without a prior `pnpm run dev:prepare`.
 - The release workflow's `--clean` requires a clean `git status`; `dev:prepare` only writes gitignored dirs
   (`.nuxt`, `playground/.nuxt`, `dist`), so it does not trip that check.
+- No local `vue-modern-cropper` workspace entry exists: `dev:prepare`, the playground and the e2e fixture all
+  resolve the required peer from the *published* `^1` in the lockfile, not from your checkout.

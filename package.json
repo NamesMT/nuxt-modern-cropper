@@ -2,16 +2,27 @@
   "name": "nuxt-modern-cropper",
   "version": "1.7.0",
   "description": "Power-packed wrapper over cropperjs",
-  "repository": "namesmt/nuxt-modern-cropper",
   "license": "MIT",
+  "homepage": "https://github.com/NamesMT/nuxt-modern-cropper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamesMT/nuxt-modern-cropper.git"
+  },
+  "bugs": "https://github.com/NamesMT/nuxt-modern-cropper/issues",
   "type": "module",
   "keywords": [
     "nuxt",
     "nuxt-module",
+    "nuxt3",
     "cropper",
     "cropperjs",
+    "image-cropper",
     "image",
-    "avatar"
+    "avatar",
+    "crop",
+    "vue",
+    "typescript",
+    "component"
   ],
   "exports": {
     ".": {
