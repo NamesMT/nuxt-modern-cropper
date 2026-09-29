@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.7.1
+
+[compare changes](https://github.com/NamesMT/nuxt-modern-cropper/compare/v1.7.0...v1.7.1)
+
+### 📖 Documentation
+
+- Add npm metadata and correct repository URL casing ([a912724](https://github.com/NamesMT/nuxt-modern-cropper/commit/a912724))
+
+### 🏡 Chore
+
+- Prepare types before publishing (prepublishOnly) ([ca02562](https://github.com/NamesMT/nuxt-modern-cropper/commit/ca02562))
+
+### 🤖 CI
+
+- **release:** Dispatch releases by hand and add an AGENTS.md ([d220a11](https://github.com/NamesMT/nuxt-modern-cropper/commit/d220a11))
+
+### ❤️ Contributors
+
+- NamesMT
+
 ## v1.7.0
 
 [compare changes](https://github.com/namesmt/nuxt-modern-cropper/compare/v1.6.11...v1.7.0)
