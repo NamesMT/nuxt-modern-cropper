@@ -51,6 +51,30 @@ No `check`/`quickcheck` script. CI runs `lint`, and `dev:prepare` then `pnpm tes
 - TypeScript throughout, ESM only (`"type": "module"`), pnpm 12 (`packageManager`).
 - `vue-modern-cropper@^1` is a required peer dependency — a consuming app must install both.
 
+## How to work here
+
+- Check who calls it before you change it; if the impact is unclear, say so rather than guessing.
+- Never overwrite or delete a large section you have not understood.
+- Do not invent requirements; surface what looks needed.
+- Report the risk, not only the change — correctness, security, operational, integration.
+- **Fix the root cause, not the instance.** The same bug under another name — a copied helper, a rule
+  stated twice, a guard bypassed by a second path — means fix the class: one implementation, one guard.
+  That is the work, not a follow-up to ask for.
+- **Verify before claiming, and say what you checked.** A green test proves only what it asserts — **break the thing it guards and watch it fail.** If it still passes, either the test is decoration or a different guard is running; find out which. Where a stub cannot answer the question, drive the real thing. Here `test/basic.test.ts` only asserts the fixture page renders, so a green suite says very little. Mark anything unverified as unverified.
+- If recall of this project is missing, read this file + `git log` before acting.
+
+## Conciseness
+
+Prune verbose, keep correctness — code, comments, docs alike. Code: a comment only for non-obvious
+intent. Docs: one idea per sentence; cut what would not change what a reader does. Delete history
+`git log` already holds — keep the rule, not the story. Never drop a caveat to save a line.
+
+## User-facing docs
+
+`README.md` is the only user-facing doc here (there is no `docs/`): concise first read, depth behind its
+`<details>` spoilers, visuals for skimmers. Docs ship with the change, in the same commit — a new
+`package.json` script moves the "Local development" block with it.
+
 ## Releasing
 
 Manual and version-first: dispatch **Actions → Release → Run workflow** with the version; it is the only publish path (a pushed tag publishes nothing). `dry-run` still writes `CHANGELOG.md`, bumps `package.json` and creates the commit and tag locally — it only skips the push, GitHub release and npm publish. One-time trusted-publisher setup (publish once by hand first) is in the README.
@@ -64,28 +88,3 @@ Manual and version-first: dispatch **Actions → Release → Run workflow** with
   (`.nuxt`, `playground/.nuxt`, `dist`), so it does not trip that check.
 - No local `vue-modern-cropper` workspace entry exists: `dev:prepare`, the playground and the e2e fixture all
   resolve the required peer from the *published* `^1` in the lockfile, not from your checkout.
-
-## How to work here
-
-- Check who calls it before you change it; if the impact is unclear, say so rather than guessing.
-- Never overwrite or delete a large section you have not understood.
-- Do not invent requirements; surface what looks needed.
-- Report the risk, not only the change — correctness, security, operational, integration.
-- **Fix the root cause, not the instance.** The same bug under another name — a copied helper, a rule
-  stated twice, a guard bypassed by a second path — means fix the class: one implementation, one guard.
-  That is the work, not a follow-up to ask for.
-- Verify before claiming, and say which direction you checked; a passing test is not evidence it pinned
-  anything (`test/basic.test.ts` only asserts the fixture page renders).
-- If recall of this project is missing, read this file + `git log` before acting.
-
-## Conciseness (applies everywhere)
-
-Prune verbose, keep correctness — code, comments, docs alike. Code: a comment only for non-obvious
-intent. Docs: one idea per sentence; cut what would not change what a reader does. Delete history
-`git log` already holds — keep the rule, not the story. Never drop a caveat to save a line.
-
-## User-facing docs
-
-`README.md` is the only user-facing doc here (there is no `docs/`): concise first read, depth behind its
-`<details>` spoilers, visuals for skimmers. Docs ship with the change, in the same commit — a new
-`package.json` script moves the "Local development" block with it.
