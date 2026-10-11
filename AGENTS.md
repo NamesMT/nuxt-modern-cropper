@@ -66,7 +66,8 @@ No `check`/`quickcheck` script. CI runs `lint`, and `dev:prepare` then `pnpm tes
 ## Conciseness
 
 Prune verbose, keep correctness — code, comments, docs alike. Code: a comment only for non-obvious
-intent. Docs: one idea per sentence; cut what would not change what a reader does. Delete history
+intent, and short — a block arguing for its own change is a commit message, not a comment. Docs:
+one idea per sentence; cut what would not change what a reader does. Delete history
 `git log` already holds — keep the rule, not the story. Never drop a caveat to save a line.
 
 ## User-facing docs
